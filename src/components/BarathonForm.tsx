@@ -11,19 +11,21 @@ const BarathonForm = (): JSX.Element  => {
         
     }, [])
 
-    const handleSubmit = ():void => {
+    const handleSubmit = (): void => {
        
     }
 
     return (
-        <form action="" onSubmit={handleSubmit}>
-            <Input name="name" type="text"/>
+        <form onSubmit={handleSubmit}>
+            <Input name="name" type="text" label="name : "/>
             {checkpoints.map((checkpoint:string) => {
                 return (
                     <>
+
                     </>
                 )
             })}
+            <br/>
             <button>Ajouter</button>
         </form>
     )
